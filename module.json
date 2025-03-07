@@ -2,6 +2,7 @@
   "id": "misc-pf2e-tweaks",
   "title": "Miscellaneous PF2E Tweaks",
   "version": "0.1.0",
+  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/v0.1.0/misc-pf2e-tweaks.zip",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -17,10 +18,9 @@
   },
   "authors": [
     {
-      "name": "Chelsea Ash",
+      "name": "CRASH1115",
       "url": "https://github.com/crash1115",
-      "discord": "crash1115",
-      "flags": {}
+      "discord": "crash1115"
     }
   ],
   "esmodules": [
@@ -30,5 +30,6 @@
     "hotReload": {
         "extensions": ["html", "css", "json"]
     }
-  }
+  },
+  "manifest": "https://raw.githubusercontent.com/crash1115/misc-pf2e-tweaks/main/module.json"
 }
