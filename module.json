@@ -1,8 +1,8 @@
 {
   "id": "misc-pf2e-tweaks",
   "title": "Miscellaneous PF2E Tweaks",
-  "version": "0.1.0",
-  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/v0.1.0/misc-pf2e-tweaks.zip",
+  "version": "0.2.0",
+  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/v0.2.0/misc-pf2e-tweaks.zip",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -24,11 +24,14 @@
     }
   ],
   "esmodules": [
-    "./scripts/misc-pf2e-tweaks.js"
+    "scripts/misc-pf2e-tweaks.js"
+  ],
+  "styles": [
+    "styles/misc-pf2e-tweaks.css"
   ],
   "flags": {
     "hotReload": {
-        "extensions": ["html", "css", "json"]
+        "extensions": ["html", "hbs", "css", "json"]
     }
   },
   "manifest": "https://raw.githubusercontent.com/crash1115/misc-pf2e-tweaks/main/module.json"

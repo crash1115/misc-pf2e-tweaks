@@ -1,0 +1,17 @@
+<div class="misc-pf2e-tweaks-content">
+    <header>
+        <h2>Speeds</h2>
+    </header>
+    <section class="misc-pf2e-tweaks-speeds">       
+        {{#each speeds}}
+        {{#if this.value}}
+        <div class="misc-pf2e-tweaks-speed-block">
+            <div class="icon" title="{{localize this.label}}">{{{this.icon}}}</div>
+            <div class="value" title="{{this.breakdown}}">{{this.value}} ft</div>
+        </div>
+        {{/if}}
+        {{/each}}
+
+    </section>
+
+</div>

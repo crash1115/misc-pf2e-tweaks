@@ -4,6 +4,12 @@ Hooks.on('init', () => {
     registerSettings();
 })
 
+Hooks.on('renderCharacterSheetPF2e', ( app, html, data ) => {
+    if(game.settings.get(MODULE_ID, 'sidebarSpeed')){
+        addSpeedsToSidebar(app, html, data);
+    }
+});
+
 Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
     if(game.settings.get(MODULE_ID, 'bleedReminder')){
         if(!changes.system?.attributes?.hp?.value) return;
@@ -13,7 +19,15 @@ Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
         const bleedCondition = actor.conditions.stored.find(c => c.system?.persistent?.damageType === "bleed");
         if (healedToFull && bleedCondition) sendBleedReminder(actor);
     }
-})
+});
+
+async function addSpeedsToSidebar(app, html, data){
+    const sidebar = html.find('.sidebar');
+    const customData = {speeds: data.speeds};
+    const speedSection = $(await renderTemplate('modules/misc-pf2e-tweaks/templates/sidebar-speed-section.hbs', customData))
+    $(sidebar).append(speedSection);
+
+}
 
 function sendBleedReminder(actor){
     ChatMessage.create({

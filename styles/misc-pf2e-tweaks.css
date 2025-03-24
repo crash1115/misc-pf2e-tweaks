@@ -1,0 +1,14 @@
+.misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+}
+.misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds .misc-pf2e-tweaks-speed-block {
+  font-size: 1.4em;
+  display: -webkit-inline-flex;
+}
+.misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds .misc-pf2e-tweaks-speed-block .icon {
+  margin-right: 5px;
+  margin-left: 5px;
+}
