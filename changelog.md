@@ -1,3 +1,6 @@
+### Version 0.3.0
+- Added a client setting to customize the display of tabs on PC sheets
+
 ### Version 0.2.0
 - Added a client setting to display speeds in the sidebar of PC sheets
 

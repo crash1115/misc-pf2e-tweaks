@@ -1,0 +1,96 @@
+<div class="misc-pf2e-tweaks-tab-customizer-content">
+
+    <h2 class="misc-pf2e-tweaks-tab-customizer-header"><i class="fas fa-warning" style="color:var(--color-warm-1)"></i> Warnings</h2>  
+
+    <p><b>Compatibility:</b> This probably doesn't work well with UI overhaul mods. Use at your own risk.</p>
+
+    <p><b>Tab Selection:</b> Using this feature can make the Manage Tabs button on the sheet behave strangely. If you need to customize which tabs are visible, disable Text Tabs, make your changes with Manage Tabs, then re-enable Text Tabs.</p>
+
+    <h2 class="misc-pf2e-tweaks-tab-customizer-header">Use Text Tabs</h2>  
+    <p>Choose whether you want to use text-based tabs instead of the default icon-based tabs.</p> 
+    <div class="form-group">
+        <label>Use Text Tabs</label>
+        <div class="form-fields">
+            <input type="checkbox" name="useTextTabs" {{checked tabConfig.useTextTabs}}>
+        </div>
+    </div>
+
+    <h2 class="misc-pf2e-tweaks-tab-customizer-header">Customize Labels</h2>  
+    <p>Text takes up more room than icons, so in the event that you can't fit all the tabs you need neatly on the sheet (or you can't wrap your head around the chosen abbreviations), this lets you customize their labels as you see fit.</p>
+    <p>Leaving a label blank will display the icon in place of text on the tab.</p>
+    
+    <div class="form-group">
+        <label>Character Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="character" value="{{tabConfig.tabLabels.character}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Actions Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="actions" value="{{tabConfig.tabLabels.actions}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Inventory Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="inventory" value="{{tabConfig.tabLabels.inventory}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Spellcasting Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="spellcasting" value="{{tabConfig.tabLabels.spellcasting}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Crafting Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="crafting" value="{{tabConfig.tabLabels.crafting}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Proficiencies Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="proficiencies" value="{{tabConfig.tabLabels.proficiencies}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Feats Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="feats" value="{{tabConfig.tabLabels.feats}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Effects Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="effects" value="{{tabConfig.tabLabels.effects}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Biography Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="biography" value="{{tabConfig.tabLabels.biography}}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>PFS Tab Label</label>
+        <div class="form-fields">
+            <input type="text" name="pfs" value="{{tabConfig.tabLabels.pfs}}">
+        </div>
+    </div>
+
+    <footer class="misc-pf2e-tweaks-label-customizer-footer">
+        <button class="misc-pf2e-tweaks-label-customizer-btn" type="button" data-action="reset">Reset Labels to Default</button>
+        <button class="misc-pf2e-tweaks-label-customizer-btn" type="submit">Save and Close</button>
+    </footer>
+</div>

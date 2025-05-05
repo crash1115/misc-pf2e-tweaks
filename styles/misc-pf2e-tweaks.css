@@ -1,14 +1,77 @@
-.misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds {
+.actor.sheet.character section.window-content form.crb-style aside div.sidebar .misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
   grid-template-rows: 1fr;
   grid-column-gap: 5px;
 }
-.misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds .misc-pf2e-tweaks-speed-block {
+.actor.sheet.character section.window-content form.crb-style aside div.sidebar .misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds .misc-pf2e-tweaks-speed-block {
   font-size: 1.4em;
   display: -webkit-inline-flex;
 }
-.misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds .misc-pf2e-tweaks-speed-block .icon {
+.actor.sheet.character section.window-content form.crb-style aside div.sidebar .misc-pf2e-tweaks-content .misc-pf2e-tweaks-speeds .misc-pf2e-tweaks-speed-block .icon {
   margin-right: 5px;
   margin-left: 5px;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs {
+  justify-content: left;
+  border: none;
+  height: unset;
+  box-shadow: none;
+  gap: 2px;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs a.item {
+  border-radius: unset;
+  box-shadow: none;
+  width: unset;
+  padding-inline: 5px;
+  background-image: unset;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs a.item svg {
+  height: 24px;
+  width: 22px;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs a.item.active {
+  transform: unset;
+  background-color: var(--bg);
+  color: var(--color-primary-1);
+  text-shadow: none;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs a.item.active svg {
+  fill: var(--color-primary-1);
+  filter: none;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs a.item:hover {
+  transform: unset;
+  background-color: var(--bg);
+  color: var(--color-primary-1);
+  text-shadow: none;
+}
+.actor.sheet.character section.window-content form.crb-style nav.sheet-navigation.misc-pf2e-tweaks-text-tabs a.item:hover svg {
+  fill: var(--color-primary-1);
+  filter: none;
+}
+
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content h2.misc-pf2e-tweaks-tab-customizer-header {
+  text-shadow: none;
+  font-size: 1.5em;
+  font-family: Signika, sans-serif;
+  color: var(--color-text-dark-primary);
+}
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content h2.misc-pf2e-tweaks-tab-customizer-header:not(:first-child) {
+  margin-top: 10px;
+}
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content div.form-group label {
+  font-weight: bold;
+}
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer {
+  margin-top: 10px;
+  display: flex;
+}
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer button {
+  color: var(--button-text-color);
+}
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer button:hover {
+  color: var(--button-hover-text-color);
 }
