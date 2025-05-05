@@ -2,8 +2,8 @@
   "id": "misc-pf2e-tweaks",
   "title": "Miscellaneous PF2E Tweaks",
   "version": "0.3.0",
-  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/${{github.event.release.tag_name}}/module.zip",
-    "url": "https://github.com/crash1115/misc-pf2e-tweaks",
+  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/0.3.0/module.zip",
+  "url": "https://github.com/crash1115/misc-pf2e-tweaks",
   "manifest": "https://github.com/crash1115/misc-pf2e-tweaks/releases/latest/download/module.json",
   "compatibility": {
     "minimum": "12",
