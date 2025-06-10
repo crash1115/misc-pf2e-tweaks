@@ -1,3 +1,6 @@
+### Version 0.13.0
+- Compatibility with Foundry v13
+
 ### Version 0.3.0
 - Added a client setting to customize the display of tabs on PC sheets
 
