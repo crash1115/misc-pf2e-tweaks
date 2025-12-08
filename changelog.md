@@ -1,3 +1,7 @@
+### Version 0.13.1
+- Converted existing client settings to user settings.
+- Added a user setting to tweak the display of the status effects panel on tokens.
+
 ### Version 0.13.0
 - Compatibility with Foundry v13
 

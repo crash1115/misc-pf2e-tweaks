@@ -14,6 +14,8 @@ Hooks.on('renderCharacterSheetPF2e', ( app, html, data ) => {
     }
 });
 
+
+
 Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
     if(game.settings.get(MODULE_ID, 'bleedReminder')){
         if(!changes.system?.attributes?.hp?.value) return;
@@ -63,3 +65,19 @@ async function overrideTabs(app, html, data){
         }
     }
 }
+
+Hooks.on("renderTokenHUD", (app, html, data, options) => {
+    if(game.settings.get(MODULE_ID, 'tweakConditionsHud')){
+        let conditionHud = document.querySelectorAll('#token-hud')[0];
+        conditionHud.classList.add('misc-pf2e-tweaks');
+        let conditions = document.querySelectorAll('.effect-control > img');
+        for(let img of conditions){
+            const label = img.parentNode.getAttribute('data-tooltip-text');
+            const labelDiv = document.createElement('div');
+            labelDiv.classList.add("condition-label")
+            labelDiv.innerHTML = label;
+            img.insertAdjacentElement("afterend", labelDiv);   
+            img.parentNode.removeAttribute('data-tooltip-text'); 
+        };
+    }
+});

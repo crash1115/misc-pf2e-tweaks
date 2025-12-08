@@ -33,7 +33,16 @@ export function registerSettings() {
     game.settings.register(MODULE_ID, 'sidebarSpeed', {
         name: "Show Speed in PC Sheet Sidebar",
         hint: "When enabled, will display speed in the sidebar of the PC sheets. This is a user-specific setting; changing it only changes it for you.",
-        scope: 'client',
+        scope: 'user',
+        default: false,
+        type: Boolean,
+        config: true
+    });
+
+    game.settings.register(MODULE_ID, 'tweakConditionsHud', {
+        name: "Tweak Token Conditions Panel",
+        hint: "When enabled, the conditions panel on tokens will be altered to display text with the icons, and sort the statuses by column rather than row. Don't turn this on if you have Monk's Little Details doing a similar thing.",
+        scope: 'user',
         default: false,
         type: Boolean,
         config: true
@@ -49,7 +58,7 @@ export function registerSettings() {
     });
 
     game.settings.register(MODULE_ID, 'tabConfig', {
-        scope: 'client',
+        scope: 'user',
         config: false,
         type: Object,
         default: DEFAULT_TAB_CONFIG

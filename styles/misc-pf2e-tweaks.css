@@ -75,3 +75,23 @@ form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks
 form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer button:hover {
   color: var(--button-hover-text-color);
 }
+
+#token-hud.misc-pf2e-tweaks .status-effects {
+  grid-template-columns: repeat(4, 160px);
+  grid-template-rows: repeat(9, 36px);
+  grid-auto-flow: column;
+  line-height: 30px;
+  text-align: left;
+}
+#token-hud.misc-pf2e-tweaks .status-effects .effect-control {
+  display: flex;
+  width: auto;
+  opacity: 0.75;
+}
+#token-hud.misc-pf2e-tweaks .status-effects .effect-control.active {
+  opacity: 1;
+}
+#token-hud.misc-pf2e-tweaks .status-effects .effect-control .condition-label {
+  margin-left: 5px;
+  color: var(--control-icon-color);
+}
