@@ -83,6 +83,11 @@ class TabCustomizer extends HandlebarsApplicationMixin(ApplicationV2) {
             submitOnChange: false,
             closeOnSubmit: true
         },
+        window: {
+            contentClasses: ["standard-form"],
+            resizable: true,
+            title: "Misc PF2e Tweaks - Customize Tabs",
+        },
         actions: {
             reset: TabCustomizer.resetLabels
         },
@@ -95,10 +100,6 @@ class TabCustomizer extends HandlebarsApplicationMixin(ApplicationV2) {
         form: {
             template: "modules/misc-pf2e-tweaks/templates/tab-customizer.hbs"
         }
-    }
-
-    get title() {
-        return "Misc PF2e Tweaks - Customize Tabs";
     }
 
     async _prepareContext(options) {

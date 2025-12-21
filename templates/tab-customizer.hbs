@@ -1,23 +1,16 @@
 <div class="misc-pf2e-tweaks-tab-customizer-content">
 
-    <h2 class="misc-pf2e-tweaks-tab-customizer-header"><i class="fas fa-warning" style="color:var(--color-warm-1)"></i> Warnings</h2>  
-
-    <p><b>Compatibility:</b> This probably doesn't work well with UI overhaul mods. Use at your own risk.</p>
-
-    <p><b>Tab Selection:</b> Using this feature can make the Manage Tabs button on the sheet behave strangely. If you need to customize which tabs are visible, disable Text Tabs, make your changes with Manage Tabs, then re-enable Text Tabs.</p>
-
-    <h2 class="misc-pf2e-tweaks-tab-customizer-header">Use Text Tabs</h2>  
-    <p>Choose whether you want to use text-based tabs instead of the default icon-based tabs.</p> 
+    <h2 class="misc-pf2e-tweaks-tab-customizer-header">Text Tabs</h2>  
     <div class="form-group">
-        <label>Use Text Tabs</label>
+        <label>Enable Text Tabs</label>
         <div class="form-fields">
             <input type="checkbox" name="useTextTabs" {{checked tabConfig.useTextTabs}}>
         </div>
+        <p class="hint">When enabled, this will replace the icon-based tabs on the PC sheets with customizable text-based tabs. Using this feature can make the Manage Tabs button on the sheet behave strangely. If you need to customize which tabs are visible, disable this features, make your changes with Manage Tabs, then re-enable this feature.</p> 
     </div>
 
-    <h2 class="misc-pf2e-tweaks-tab-customizer-header">Customize Labels</h2>  
-    <p>Text takes up more room than icons, so in the event that you can't fit all the tabs you need neatly on the sheet (or you can't wrap your head around the chosen abbreviations), this lets you customize their labels as you see fit.</p>
-    <p>Leaving a label blank will display the icon in place of text on the tab.</p>
+    <h2 class="misc-pf2e-tweaks-tab-customizer-header">Customize Tab Labels</h2>  
+    <p class="misc-pf2e-tweaks-tab-customizer-hint hint">Change the text of the tab labels as you see fit. Leaving a label blank will display the icon in place of text on the tab.</p>
     
     <div class="form-group">
         <label>Character Tab Label</label>
@@ -89,7 +82,7 @@
         </div>
     </div>
 
-    <footer class="misc-pf2e-tweaks-label-customizer-footer">
+    <footer class="misc-pf2e-tweaks-label-customizer-footer form-footer">
         <button class="misc-pf2e-tweaks-label-customizer-btn" type="button" data-action="reset">Reset Labels to Default</button>
         <button class="misc-pf2e-tweaks-label-customizer-btn" type="submit">Save and Close</button>
     </footer>

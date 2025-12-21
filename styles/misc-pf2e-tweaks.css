@@ -53,27 +53,24 @@
   filter: none;
 }
 
+form#misc-pf2e-tweaks-tab-customizer section.window-content {
+  overflow-y: auto;
+}
 form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content h2.misc-pf2e-tweaks-tab-customizer-header {
   text-shadow: none;
   font-size: 1.5em;
   font-family: Signika, sans-serif;
   color: var(--color-text-dark-primary);
+  margin-bottom: 0px;
 }
 form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content h2.misc-pf2e-tweaks-tab-customizer-header:not(:first-child) {
   margin-top: 10px;
 }
-form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content div.form-group label {
-  font-weight: bold;
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content p.misc-pf2e-tweaks-tab-customizer-hint {
+  margin-bottom: 1rem;
 }
-form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer {
-  margin-top: 10px;
-  display: flex;
-}
-form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer button {
-  color: var(--button-text-color);
-}
-form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content footer.misc-pf2e-tweaks-label-customizer-footer button:hover {
-  color: var(--button-hover-text-color);
+form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks-tab-customizer-content .form-group {
+  margin-bottom: 1rem;
 }
 
 #token-hud.misc-pf2e-tweaks .status-effects {
