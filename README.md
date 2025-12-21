@@ -15,7 +15,7 @@ Lets you use text-based tabs on PC sheets instead of the default icon tabs. Cust
 
 <img width="1262" height="851" alt="image" src="https://github.com/user-attachments/assets/5a891aeb-be3e-47c1-b4fd-68afd5738722" />
 
-## Tweak Token Conditions Panel.
+## Tweak Token Conditions Panel
 Modifies the conditions panel on tokens to display the names of conditions alongside the icons, and sorts the statuses by column rather than row. Similar to the settings from Monk's Little Details; if you're using that to do the same thing, don't turn this on. [User-specific setting] [ Default OFF]
 
 <img width="873" height="400" alt="image" src="https://github.com/user-attachments/assets/5e4f9a19-08c4-4f0d-be4a-c147005fcff2" />
