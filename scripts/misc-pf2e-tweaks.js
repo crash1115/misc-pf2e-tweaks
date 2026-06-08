@@ -72,7 +72,7 @@ Hooks.on("renderTokenHUD", (app, html, data, options) => {
         conditionHud.classList.add('misc-pf2e-tweaks');
         let conditions = document.querySelectorAll('.effect-control > img');
         for(let img of conditions){
-            const label = img.parentNode.getAttribute('data-tooltip-text');
+            const label = img.parentNode.getAttribute("aria-label");
             const labelDiv = document.createElement('div');
             labelDiv.classList.add("condition-label")
             labelDiv.innerHTML = label;

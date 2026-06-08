@@ -1,3 +1,6 @@
+### Version 0.14.0
+- Compatibility with Foundry v14 and pf2e v8
+
 ### Version 0.13.2
 - Updated styling of the tab customization UI
 
