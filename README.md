@@ -20,3 +20,5 @@ Modifies the conditions panel on tokens to display the names of conditions along
 
 <img width="873" height="400" alt="image" src="https://github.com/user-attachments/assets/5e4f9a19-08c4-4f0d-be4a-c147005fcff2" />
 
+## De-Select Tokens on Scene Load
+When enabled, a player loading into a scene will by default have no tokens selected, rather than all their tokens selected. (This is useful in something like Kingmaker, where players might have ownership of a party token and several armies, and having them all selected by default makes moving just one of them a pain.) [ Default OFF]

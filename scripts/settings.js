@@ -30,6 +30,15 @@ export function registerSettings() {
         config: true
     });
 
+    game.settings.register(MODULE_ID, 'deSelectTokens', {
+        name: "De-Select Tokens on Scene Load",
+        hint: "When enabled, a player loading into a scene will by default have no tokens selected, rather than all their tokens selected. (This is useful in something like Kingmaker, where players might have ownership of a party token and several armies, and having them all selected by default makes moving just one of them a pain.)",
+        scope: 'world',
+        default: false,
+        type: Boolean,
+        config: true
+    });
+
     game.settings.register(MODULE_ID, 'sidebarSpeed', {
         name: "Show Speed in PC Sheet Sidebar",
         hint: "When enabled, will display speed in the sidebar of the PC sheets. This is a user-specific setting; changing it only changes it for you.",

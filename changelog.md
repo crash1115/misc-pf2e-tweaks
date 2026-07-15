@@ -1,3 +1,6 @@
+### Version 0.14.1
+- Adds setting to de-select player tokens on scene load
+
 ### Version 0.14.0
 - Compatibility with Foundry v14 and pf2e v8
 

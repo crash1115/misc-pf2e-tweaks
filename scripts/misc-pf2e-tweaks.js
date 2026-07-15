@@ -14,8 +14,6 @@ Hooks.on('renderCharacterSheetPF2e', ( app, html, data ) => {
     }
 });
 
-
-
 Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
     if(game.settings.get(MODULE_ID, 'bleedReminder')){
         if(!changes.system?.attributes?.hp?.value) return;
@@ -79,5 +77,12 @@ Hooks.on("renderTokenHUD", (app, html, data, options) => {
             img.insertAdjacentElement("afterend", labelDiv);   
             img.parentNode.removeAttribute('data-tooltip-text'); 
         };
+    }
+});
+
+Hooks.on('canvasReady', (canvas) => {
+    if(game.settings.get(MODULE_ID, 'deSelectTokens')){
+        if (game.user.isGM) return;
+        canvas.tokens.releaseAll();
     }
 });
