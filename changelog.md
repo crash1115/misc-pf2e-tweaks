@@ -1,3 +1,6 @@
+### Version 0.14.2
+- Adds setting to list conditions for each party member on the party sheet's overview tab
+
 ### Version 0.14.1
 - Adds setting to de-select player tokens on scene load
 

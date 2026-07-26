@@ -18,7 +18,6 @@ const DEFAULT_TAB_CONFIG = {
     tabLabels: DEFAULT_TEXT_TAB_LABELS
 }
 
-
 export function registerSettings() {
 
     game.settings.register(MODULE_ID, 'bleedReminder', {
@@ -54,6 +53,20 @@ export function registerSettings() {
         scope: 'user',
         default: false,
         type: Boolean,
+        config: true
+    });
+
+    game.settings.register(MODULE_ID, 'partySheetConditions', {
+        name: "Show Conditions on Party Sheet",
+        hint: "When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unifentified conditions or effects unless viewing as GM. Default mode makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode makes the icons fully opaque to help with visibility.",
+        scope: 'user',
+        default: "disabled",
+        type: String,
+        choices: {
+            off: "Off",
+            on: "On (Default)",
+            contrast: "On (High Contrast)",
+        },
         config: true
     });
 

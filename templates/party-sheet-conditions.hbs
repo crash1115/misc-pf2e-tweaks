@@ -1,0 +1,30 @@
+
+
+<div class="misc-pf2e-tweaks-conditions-content">
+    <label>Conditions & Effects</label>
+    
+    {{#if noEffects}}
+    <span class="blank">No active conditions</span>
+    
+    {{else}}
+    <div class="conditions {{#if contrastMode}}high-contrast{{/if}}">
+        {{#each conditions}}
+        <img src="{{this.img}}" class="condition-icon" data-tooltip-text="{{this.name}}"></img>
+        {{/each}}
+
+        {{#if showDivider1}} <span class="divider"></span> {{/if}}
+
+        {{#each effectItems}}
+        <img src="{{this.img}}" class="condition-icon" data-tooltip-text="{{this.name}}"></img>
+        {{/each}}
+
+        {{#if showDivider2}} <span class="divider"></span> {{/if}}
+
+        {{#each effects}}
+        <img src="{{this.img}}" class="condition-icon" data-tooltip-text="{{this.name}}"></img>
+        {{/each}}
+    </div>
+    {{/if}}
+    
+</div>
+
