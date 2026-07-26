@@ -15,7 +15,9 @@ Whispers a message in chat reminding you to remove persistent bleed damage when 
 <img width="466" height="158" alt="image" src="https://github.com/user-attachments/assets/a2d9193c-59f9-4012-8d3d-eb5cabbbe898" />
 
 # De-Select Tokens on Scene Load
-When enabled, a player loading into a scene will by default have no tokens selected, rather than all their tokens selected. (This is useful in something like Kingmaker, where players might have ownership of a party token and several armies, and having them all selected by default makes moving just one of them a pain.) [Global setting] [ Default OFF]
+[Global setting] [ Default OFF]
+
+When enabled, a player loading into a scene will by default have no tokens selected, rather than all their tokens selected. (This is useful in something like Kingmaker, where players might have ownership of a party token and several armies, and having them all selected by default makes moving just one of them a pain.)
 
 # Show Speed in PC Sheet Sidebar
 [User-specific setting] [ Default OFF]
