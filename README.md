@@ -38,6 +38,5 @@ Modifies the conditions panel on tokens to display the names of conditions along
  
 When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unidentified conditions or effects unless viewing as GM. Default mode (left image below) makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode (right image below) makes the icons fully opaque to help with visibility.
 
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="600" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
-
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="400" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
 
