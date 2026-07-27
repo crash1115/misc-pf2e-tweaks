@@ -40,3 +40,7 @@ When enabled, shows a list of conditions and effects for each party member on th
 
 <img height="400" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="400" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
 
+# Add Checkboxes to NPC Attacks
+ [User-specific setting] [ Default OFF]
+ 
+When enabled, adds toggleable checkboxes to attack entries on NPC sheets. This can be used to keep track of which weapon is being held, which attack has been used, or for any other purpose. Persists on a per-user-per-sheet basis.

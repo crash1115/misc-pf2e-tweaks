@@ -1,3 +1,7 @@
+### Version 0.14.4
+- Adds setting to add checkboxes to NPC attack
+- Implement garbage cleanup when deleting actors
+
 ### Version 0.14.3
 - Adds setting to collapse/expand spell entries
 - Fixes a spelling error in the party sheet conditions setting description
