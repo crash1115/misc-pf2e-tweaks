@@ -52,3 +52,5 @@ When enabled, shows a list of conditions and effects for each party member on th
  [User-specific setting] [ Default OFF]
  
 When enabled, adds toggleable checkboxes to attack entries on NPC sheets. This can be used to keep track of which weapon is being held, which attack has been used, or for any other purpose. Toggled checkboxes persist between sessions/browsers on a per-user-per-sheet basis.
+
+<img width="497" height="187" alt="image" src="https://github.com/user-attachments/assets/08946cb0-da82-468d-b243-3ff07688206d" />
