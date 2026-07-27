@@ -128,6 +128,8 @@ form#misc-pf2e-tweaks-tab-customizer section.window-content div.misc-pf2e-tweaks
   grid-auto-flow: column;
   line-height: 30px;
   text-align: left;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 #token-hud.misc-pf2e-tweaks .status-effects .effect-control {
   display: flex;
