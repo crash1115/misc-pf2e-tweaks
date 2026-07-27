@@ -29,7 +29,7 @@ When enabled, displays speeds at the bottom of the sidebar on the PC sheet. Hove
 # Collapsible Spell Entries
 [User-specific setting] [ Default OFF]
  
-When enabled, adds a button to expand/collapse spell entries on PC sheets. Collapsed sections persist between sessions/browsers, on a per-user-per-actor basis.
+When enabled, adds a button to expand/collapse spell entries on PC sheets. Collapsed sections persist between sessions/browsers, on a per-user-per-actor basis. Works with entries in the Known Spells, Rituals, and Activations tabs, including entries that are generated from modules like PF2e Dailies or PF2e Item Activations.
 
 <img height="600" alt="image" src="https://github.com/user-attachments/assets/0dcaab97-861d-4078-990e-5e87ff648105" />
 
