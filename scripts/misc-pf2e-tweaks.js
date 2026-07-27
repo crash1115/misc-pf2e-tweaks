@@ -6,6 +6,7 @@ import { handleBleedReminder } from "./features/bleed-reminder.js";
 import { overrideTabs } from "./features/text-based-tabs.js";
 import { tweakConditionsHud } from "./features/tweak-conditions-hud.js";
 import { deselectTokens } from "./features/deselect-tokens.js";
+import { handleNpcAttackCheckboxes, removeNpcAttackCheckboxesForActor, removeNpcAttackCheckboxesForScene, removeNpcAttackCheckboxesForToken } from "./features/npc-attack-checkboxes.js";
 
 Hooks.on('init', () => {
     registerSettings();
@@ -31,6 +32,12 @@ Hooks.on('renderPartySheetPF2e', ( app, html, data ) => {
     }
 });
 
+Hooks.on('renderNPCSheetPF2e', ( app, html, data ) => {
+    if(game.settings.get(MODULE_ID, 'npcAttackCheckboxes')){
+        handleNpcAttackCheckboxes(app, html, data);
+    }
+});
+
 Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
     if(game.settings.get(MODULE_ID, 'bleedReminder')){
         handleBleedReminder(actor, changes);
@@ -38,8 +45,18 @@ Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
 });
 
 Hooks.on('deleteActor', ( actor, action, id ) => {
+    removeNpcAttackCheckboxesForActor(actor.id);
     removeCollapsibleSpellEntriesForActor(actor.id);
 });
+
+Hooks.on('deleteToken', ( token, action, id ) => {
+    removeNpcAttackCheckboxesForToken(token.id);
+});
+
+Hooks.on('deleteScene', ( scene, action, id ) => {
+    removeNpcAttackCheckboxesForScene(scene.id);
+});
+
 
 Hooks.on("renderTokenHUD", (app, html, data, options) => {
     if(game.settings.get(MODULE_ID, 'tweakConditionsHud')){

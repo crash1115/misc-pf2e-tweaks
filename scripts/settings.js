@@ -24,6 +24,12 @@ const DEFAULT_COLLAPSED_SPELL_ENTRIES = {};
     "another": ["even", "more", "sections", "here"]
 } */
 
+const DEFAULT_CHECKED_NPC_ATTACKS = {};
+/* {
+    "sheetId": ["ids", "go", "here"],
+    "another": ["even", "more", "here"]
+} */
+
 export function registerSettings() {
 
     game.settings.register(MODULE_ID, 'bleedReminder', {
@@ -106,6 +112,22 @@ export function registerSettings() {
         config: false,
         type: Object,
         default: DEFAULT_COLLAPSED_SPELL_ENTRIES
+    }); 
+
+    game.settings.register(MODULE_ID, 'npcAttackCheckboxes', {
+        name: "Add Checkboxes to NPC Attacks",
+        hint: "When enabled, adds toggleable checkboxes to attack entries on NPC sheets. This can be used to keep track of which weapon is being held, which attack has been used, or any other purpose.",
+        scope: 'user',
+        default: false,
+        type: Boolean,
+        config: true
+    });
+
+    game.settings.register(MODULE_ID, 'checkedNpcAttacks', {
+        scope: 'user',
+        config: false,
+        type: Object,
+        default: DEFAULT_CHECKED_NPC_ATTACKS
     }); 
 }
 

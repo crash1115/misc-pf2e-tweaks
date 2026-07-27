@@ -123,6 +123,18 @@
   box-shadow: 0 0 5px var(--color-shadow-primary);
 }
 
+.actor.sheet.npc section.window-content div.attacks ol.strikes-list li div.controls div.misc-pf2e-tweaks-toggle {
+  display: inline-block;
+  align-self: center;
+  width: 12px;
+  margin-right: 6px;
+}
+.actor.sheet.npc section.window-content div.attacks ol.strikes-list li div.controls div.misc-pf2e-tweaks-toggle input.misc-pf2e-tweaks-npc-attack {
+  margin: 0;
+  padding: 0;
+  height: 14px;
+}
+
 form#misc-pf2e-tweaks-tab-customizer section.window-content {
   overflow-y: auto;
 }
