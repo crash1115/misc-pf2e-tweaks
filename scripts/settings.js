@@ -18,6 +18,12 @@ const DEFAULT_TAB_CONFIG = {
     tabLabels: DEFAULT_TEXT_TAB_LABELS
 }
 
+const DEFAULT_COLLAPSED_SPELL_ENTRIES = {};
+/* {
+    "actorId": ["collapsed", "section", "ids", "go", "here"],
+    "another": ["even", "more", "sections", "here"]
+} */
+
 export function registerSettings() {
 
     game.settings.register(MODULE_ID, 'bleedReminder', {
@@ -47,6 +53,15 @@ export function registerSettings() {
         config: true
     });
 
+    game.settings.register(MODULE_ID, 'collapseSpellEntries', {
+        name: "Collapsible Spell Entries",
+        hint: "When enabled, adds a button to expand/collapse spell entries on PC sheets.",
+        scope: 'user',
+        default: false,
+        type: Boolean,
+        config: true
+    });
+
     game.settings.register(MODULE_ID, 'tweakConditionsHud', {
         name: "Tweak Token Conditions Panel",
         hint: "When enabled, the conditions panel on tokens will be altered to display text with the icons, and sort the statuses by column rather than row. Don't turn this on if you have Monk's Little Details doing a similar thing.",
@@ -58,7 +73,7 @@ export function registerSettings() {
 
     game.settings.register(MODULE_ID, 'partySheetConditions', {
         name: "Show Conditions on Party Sheet",
-        hint: "When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unifentified conditions or effects unless viewing as GM. Default mode makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode makes the icons fully opaque to help with visibility.",
+        hint: "When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unidentified conditions or effects unless viewing as GM. Default mode makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode makes the icons fully opaque to help with visibility.",
         scope: 'user',
         default: "disabled",
         type: String,
@@ -85,8 +100,14 @@ export function registerSettings() {
         type: Object,
         default: DEFAULT_TAB_CONFIG
     }); 
-}
 
+    game.settings.register(MODULE_ID, 'collapsedSpellEntries', {
+        scope: 'user',
+        config: false,
+        type: Object,
+        default: DEFAULT_COLLAPSED_SPELL_ENTRIES
+    }); 
+}
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api
 class TabCustomizer extends HandlebarsApplicationMixin(ApplicationV2) {

@@ -1,3 +1,9 @@
+### Version 0.14.3
+- Adds setting to collapse/expand spell entries
+- Fixes a spelling error in the party sheet conditions setting description
+- Behind the scenes code refactor
+- Fix issue with styling of tweaked token condition panel
+
 ### Version 0.14.2
 - Adds setting to list conditions for each party member on the party sheet's overview tab
 

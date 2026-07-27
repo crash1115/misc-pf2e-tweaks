@@ -52,6 +52,27 @@
   fill: var(--color-primary-1);
   filter: none;
 }
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry a.misc-pf2e-tweaks-toggle {
+  color: var(--text-light);
+}
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry a.misc-pf2e-tweaks-toggle i.collapse {
+  display: block;
+}
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry a.misc-pf2e-tweaks-toggle i.expand {
+  display: none;
+}
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry.misc-pf2e-tweaks-collapsed a.misc-pf2e-tweaks-toggle i.collapse {
+  display: none;
+}
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry.misc-pf2e-tweaks-collapsed a.misc-pf2e-tweaks-toggle i.expand {
+  display: block;
+}
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry.misc-pf2e-tweaks-collapsed div.spell-ability-data {
+  display: none;
+}
+.actor.sheet.character section.window-content form.crb-style div.spell-collections li.spellcasting-entry.misc-pf2e-tweaks-collapsed ol.spell-list {
+  display: none;
+}
 
 .actor.sheet.party section.window-content section.member.pf2e-misc-tweaks {
   height: unset;

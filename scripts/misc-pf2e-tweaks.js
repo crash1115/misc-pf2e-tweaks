@@ -1,6 +1,6 @@
 import { registerSettings, MODULE_ID } from "./settings.js";
 import { addSpeedsToSidebar } from "./features/sidebar-speeds.js";
-import { addCollapsibleSpellEntries } from "./features/collapsible-spell-entries.js";
+import { handleCollapsibleSpellEntries } from "./features/collapsible-spell-entries.js";
 import { addConditionsToPartySheet } from "./features/party-sheet-conditions.js";
 import { handleBleedReminder } from "./features/bleed-reminder.js";
 import { overrideTabs } from "./features/text-based-tabs.js";
@@ -14,6 +14,10 @@ Hooks.on('init', () => {
 Hooks.on('renderCharacterSheetPF2e', ( app, html, data ) => {
     if(game.settings.get(MODULE_ID, 'sidebarSpeed')){
         addSpeedsToSidebar(app, html, data);
+    }
+
+    if(game.settings.get(MODULE_ID, 'collapseSpellEntries')){
+        handleCollapsibleSpellEntries(app, html, data);
     }
 
     if(game.settings.get(MODULE_ID, 'tabConfig')?.useTextTabs){
