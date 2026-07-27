@@ -26,6 +26,14 @@ When enabled, displays speeds at the bottom of the sidebar on the PC sheet. Hove
 
 <img width="352" height="265" alt="image" src="https://github.com/user-attachments/assets/535869a5-6636-40b1-aa23-8e121db72503" />
 
+# Collapsible Spell Entries
+[User-specific setting] [ Default OFF]
+ 
+When enabled, adds a button to expand/collapse spell entries on PC sheets. Collapsed sections persist between sessions/browsers, on a per-user-per-actor basis.
+
+<img height="600" alt="image" src="https://github.com/user-attachments/assets/0dcaab97-861d-4078-990e-5e87ff648105" />
+
+
 # Tweak Token Conditions Panel
 [User-specific setting] [ Default OFF]
 
