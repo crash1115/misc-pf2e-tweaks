@@ -67,3 +67,14 @@ async function cleanup(actor){
     settingData[actor._id] = purged;
     await game.settings.set(MODULE_ID,'collapsedSpellEntries', settingData);
 }
+
+export async function removeCollapsibleSpellEntriesForActor(id){
+    let collapsedSections = foundry.utils.deepClone(game.settings.get(MODULE_ID, 'collapsedSpellEntries'));
+    const keys = Object.keys(collapsedSections);
+    keys.forEach( key => {
+        if(key === id){ 
+            delete collapsedSections[key];
+        }
+    });
+    await game.settings.set(MODULE_ID, 'collapsedSpellEntries', collapsedSections);
+}

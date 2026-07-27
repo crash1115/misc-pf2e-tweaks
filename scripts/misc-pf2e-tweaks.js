@@ -1,6 +1,6 @@
 import { registerSettings, MODULE_ID } from "./settings.js";
 import { addSpeedsToSidebar } from "./features/sidebar-speeds.js";
-import { handleCollapsibleSpellEntries } from "./features/collapsible-spell-entries.js";
+import { handleCollapsibleSpellEntries, removeCollapsibleSpellEntriesForActor } from "./features/collapsible-spell-entries.js";
 import { addConditionsToPartySheet } from "./features/party-sheet-conditions.js";
 import { handleBleedReminder } from "./features/bleed-reminder.js";
 import { overrideTabs } from "./features/text-based-tabs.js";
@@ -35,6 +35,10 @@ Hooks.on('preUpdateActor', ( actor, changes, options, id) => {
     if(game.settings.get(MODULE_ID, 'bleedReminder')){
         handleBleedReminder(actor, changes);
     }
+});
+
+Hooks.on('deleteActor', ( actor, action, id ) => {
+    removeCollapsibleSpellEntriesForActor(actor.id);
 });
 
 Hooks.on("renderTokenHUD", (app, html, data, options) => {
