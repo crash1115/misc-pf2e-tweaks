@@ -15,7 +15,9 @@ Whispers a message in chat reminding you to remove persistent bleed damage when 
 <img width="466" height="158" alt="image" src="https://github.com/user-attachments/assets/a2d9193c-59f9-4012-8d3d-eb5cabbbe898" />
 
 # De-Select Tokens on Scene Load
-When enabled, a player loading into a scene will by default have no tokens selected, rather than all their tokens selected. (This is useful in something like Kingmaker, where players might have ownership of a party token and several armies, and having them all selected by default makes moving just one of them a pain.) [Global setting] [ Default OFF]
+[Global setting] [ Default OFF]
+
+When enabled, a player loading into a scene will by default have no tokens selected, rather than all their tokens selected. (This is useful in something like Kingmaker, where players might have ownership of a party token and several armies, and having them all selected by default makes moving just one of them a pain.)
 
 # Show Speed in PC Sheet Sidebar
 [User-specific setting] [ Default OFF]
@@ -36,6 +38,5 @@ Modifies the conditions panel on tokens to display the names of conditions along
  
 When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unidentified conditions or effects unless viewing as GM. Default mode (left image below) makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode (right image below) makes the icons fully opaque to help with visibility.
 
-<img height="600" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="600" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
-
+<img height="400" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="400" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
 
