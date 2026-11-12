@@ -143,7 +143,7 @@ export function registerSettings() {
         name: "Automatically Open Sidebar",
         hint: "When enabled, the sidebar on the right automatically opens when you load into Foundry. Might conflict with PF2e HUD's Auto Expand on Load setting.",
         scope: 'user',
-        default: true,
+        default: false,
         type: Boolean,
         config: true
     });

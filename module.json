@@ -1,8 +1,8 @@
 {
   "id": "misc-pf2e-tweaks",
   "title": "Miscellaneous PF2E Tweaks",
-  "version": "0.14.4",
-  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/0.14.4/module.zip",
+  "version": "0.14.5",
+  "download": "https://github.com/crash1115/misc-pf2e-tweaks/releases/download/0.14.5/module.zip",
   "url": "https://github.com/crash1115/misc-pf2e-tweaks",
   "manifest": "https://github.com/crash1115/misc-pf2e-tweaks/releases/latest/download/module.json",
   "compatibility": {
@@ -14,6 +14,13 @@
       {
         "id": "pf2e",
         "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
         "compatibility": {}
       }
     ]

@@ -42,13 +42,24 @@ Modifies the conditions panel on tokens to display the names of conditions along
 <img width="873" height="400" alt="image" src="https://github.com/user-attachments/assets/5e4f9a19-08c4-4f0d-be4a-c147005fcff2" />
 
 # Show Conditions on Party Sheet
- [User-specific setting] [ Default OFF]
+[User-specific setting] [ Default OFF]
  
 When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unidentified conditions or effects unless viewing as GM. Default mode (left image below) makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode (right image below) makes the icons fully opaque to help with visibility.
 
 <img height="400" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="400" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
 
 # Add Checkboxes to NPC Attacks
- [User-specific setting] [ Default OFF]
+[User-specific setting] [ Default OFF]
  
 When enabled, adds toggleable checkboxes to attack entries on NPC sheets. This can be used to keep track of which weapon is being held, which attack has been used, or for any other purpose. Toggled checkboxes persist between sessions/browsers on a per-user-per-sheet basis.
+
+# Always Post Ammunition Descriptions to Chat
+[Global setting] [ Default OFF]
+ 
+When enabled, ranged attacks made by Player Characters will post the ammunition's description to chat, provided the ammunition's item level is greater than 0. This setting requires the installation of libwrapper to function properly.
+
+
+# Automatically Open Sidebar
+ [User-specific setting] [ Default OFF]
+ 
+When enabled, the sidebar on the right will automatically open when you load into Foundry. While it technically uses a different method, this might conflict with PF2e HUD's Auto Expand on Load setting, so don't use both at the same time.
