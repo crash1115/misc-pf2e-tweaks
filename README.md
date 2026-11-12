@@ -44,7 +44,7 @@ Modifies the conditions panel on tokens to display the names of conditions along
 # Show Conditions on Party Sheet
 [User-specific setting] [ Default OFF]
  
-When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. It doesn't show any unidentified conditions or effects unless viewing as GM. Default mode (left image below) makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode (right image below) makes the icons fully opaque to help with visibility.
+When enabled, shows a list of conditions and effects for each party member on the Party Sheet's Overview tab. Hovering over an effect will display a tooltip with the effect's name, provided the user has at least Observer permissions of the actor the effect is on. Unidentified conditions and effects are only visible to the GM. Default mode (left image below) makes the icons slightly transparent to reduce visual clutter on the sheet. High Contrast mode (right image below) makes the icons fully opaque to help with visibility.
 
 <img height="400" alt="image" src="https://github.com/user-attachments/assets/ed5457a0-4b84-453e-9d89-3b185aa8bdd2" /> <img height="400" alt="image" src="https://github.com/user-attachments/assets/17061e25-0ac5-4c7f-8d6c-e1497855f6c9" />
 
