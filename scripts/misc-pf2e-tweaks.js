@@ -7,10 +7,17 @@ import { overrideTabs } from "./features/text-based-tabs.js";
 import { tweakConditionsHud } from "./features/tweak-conditions-hud.js";
 import { deselectTokens } from "./features/deselect-tokens.js";
 import { handleNpcAttackCheckboxes, removeNpcAttackCheckboxesForActor, removeNpcAttackCheckboxesForScene, removeNpcAttackCheckboxesForToken } from "./features/npc-attack-checkboxes.js";
+import { openSidebar } from "./features/open-sidebar.js";
 
 Hooks.on('init', () => {
     registerSettings();
 })
+
+Hooks.on("ready", () => {
+    if(game.settings.get(MODULE_ID, 'openSidebar')){
+        openSidebar();
+    };
+});
 
 Hooks.on('renderCharacterSheetPF2e', ( app, html, data ) => {
     if(game.settings.get(MODULE_ID, 'sidebarSpeed')){

@@ -129,6 +129,15 @@ export function registerSettings() {
         type: Object,
         default: DEFAULT_CHECKED_NPC_ATTACKS
     }); 
+
+    game.settings.register(MODULE_ID, 'openSidebar', {
+        name: "Automatically Open Sidebar",
+        hint: "When enabled, the sidebar on the right automatically opens when you load into Foundry. Might conflict with PF2e HUD's Auto Expand on Load setting.",
+        scope: 'user',
+        default: true,
+        type: Boolean,
+        config: true
+    });
 }
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api
