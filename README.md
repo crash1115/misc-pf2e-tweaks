@@ -58,7 +58,7 @@ When enabled, adds toggleable checkboxes to attack entries on NPC sheets. This c
 # Always Post Ammunition Descriptions to Chat
 [Global setting] [ Default OFF]
  
-When enabled, ranged attacks made by Player Characters will post the ammunition's description to chat, provided the ammunition's item level is greater than 0. This setting requires the installation of libwrapper to function properly.
+When enabled, ranged attacks made by Player Characters will post the ammunition's description to chat, provided the ammunition's item level is greater than 0. This setting requires the installation of libwrapper to function properly. This setting might conflict with PF2e Ranged Combat's Post Full Ammunition Description setting, so don't use both at the same time.
 
 # Automatically Open Sidebar
  [User-specific setting] [ Default OFF]
