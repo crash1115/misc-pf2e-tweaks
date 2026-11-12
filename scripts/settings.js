@@ -128,7 +128,16 @@ export function registerSettings() {
         config: false,
         type: Object,
         default: DEFAULT_CHECKED_NPC_ATTACKS
-    }); 
+    });
+
+    game.settings.register(MODULE_ID, 'postAmmoToChat', {
+        name: "Always Post Ammunition Descriptions to Chat",
+        hint: "When enabled, ranged attacks using specialty ammunition will post the ammo's description to chat. Only works for PCs. Requires libwrapper.",
+        scope: 'world',
+        default: false,
+        type: Boolean,
+        config: true
+    });
 
     game.settings.register(MODULE_ID, 'openSidebar', {
         name: "Automatically Open Sidebar",

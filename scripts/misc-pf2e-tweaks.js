@@ -7,11 +7,23 @@ import { overrideTabs } from "./features/text-based-tabs.js";
 import { tweakConditionsHud } from "./features/tweak-conditions-hud.js";
 import { deselectTokens } from "./features/deselect-tokens.js";
 import { handleNpcAttackCheckboxes, removeNpcAttackCheckboxesForActor, removeNpcAttackCheckboxesForScene, removeNpcAttackCheckboxesForToken } from "./features/npc-attack-checkboxes.js";
+import { postAmmoToChat } from "./features/post-ammo.js";
 import { openSidebar } from "./features/open-sidebar.js";
 
 Hooks.on('init', () => {
     registerSettings();
 })
+
+Hooks.once("ready", () => {
+    if(!game.modules.get('lib-wrapper')?.active) return;
+    if(game.settings.get(MODULE_ID, 'postAmmoToChat')){
+        libWrapper.register(MODULE_ID,
+            "game.pf2e.Check.roll", async function ( wrapped, ...args){
+                await postAmmoToChat(args[1]);
+                return wrapped(...args);
+            }, "WRAPPER");
+    }
+});
 
 Hooks.on("ready", () => {
     if(game.settings.get(MODULE_ID, 'openSidebar')){
