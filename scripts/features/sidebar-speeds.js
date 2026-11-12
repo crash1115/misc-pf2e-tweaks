@@ -1,5 +1,3 @@
-import { MODULE_ID } from "../settings.js";
-
 export async function addSpeedsToSidebar(app, html, data){
     const sidebar = html[0].querySelector('.sidebar');
     const customData = {speeds: data.speeds};

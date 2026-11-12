@@ -1,5 +1,3 @@
-import { MODULE_ID } from "../settings.js";
-
 export function tweakConditionsHud(app, html, data, options){
     let conditionHud = document.querySelectorAll('#token-hud')[0];
     conditionHud.classList.add('misc-pf2e-tweaks');

@@ -1,6 +1,3 @@
-import { MODULE_ID } from "../settings.js";
-
-
 export function handleBleedReminder (actor, changes){
     if(!changes.system?.attributes?.hp?.value) return;
     const maxHp = actor.system.attributes.hp.max;
