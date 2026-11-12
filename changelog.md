@@ -1,3 +1,7 @@
+### Version 0.14.5
+- Adds setting to automatically expand the sidebar on load
+- Adds setting to always post special ammo descriptions to chat when a PC makes a ranged attack
+
 ### Version 0.14.4
 - Adds setting to add checkboxes to NPC attack
 - Implement garbage cleanup when deleting actors
