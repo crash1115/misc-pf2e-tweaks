@@ -1,5 +1,6 @@
-### Version 0.14.5
+### Version 0.14.6
 - Fix error handling in post special ammo descriptions
+
 ### Version 0.14.5
 - Adds setting to automatically expand the sidebar on load
 - Adds setting to always post special ammo descriptions to chat when a PC makes a ranged attack
