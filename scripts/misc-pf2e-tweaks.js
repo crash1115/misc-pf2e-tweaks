@@ -16,13 +16,13 @@ Hooks.on('init', () => {
 
 Hooks.once("ready", () => {
     if(!game.modules.get('lib-wrapper')?.active) return;
-    if(game.settings.get(MODULE_ID, 'postAmmoToChat')){
-        libWrapper.register(MODULE_ID,
-            "game.pf2e.Check.roll", async function ( wrapped, ...args){
-                await postAmmoToChat(args[1]);
-                return wrapped(...args);
-            }, "WRAPPER");
-    }
+    
+    libWrapper.register(MODULE_ID, "game.pf2e.Check.roll", async function ( wrapped, ...args){
+        if(game.settings.get(MODULE_ID, 'postAmmoToChat')){
+            await postAmmoToChat(args[1]);
+        }
+        return wrapped(...args);
+    }, "WRAPPER");
 });
 
 Hooks.on("ready", () => {
